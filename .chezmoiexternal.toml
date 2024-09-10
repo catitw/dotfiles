@@ -1,6 +1,3 @@
 [".config/nvim"]
-  type = "archive"
-  url = "https://github.com/siuolyppah/astronvimv4_conf/archive/master.tar.gz"
-  exact = true
-  stripComponents = 1
-
+type = "git-repo"
+url = "git@github.com:siuolyppah/astronvimv4_conf.git"
