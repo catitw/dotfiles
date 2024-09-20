@@ -1,0 +1,11 @@
+packages:
+  linux:
+    archlinux:
+      pacman:
+        - 'unzip'
+        - 'nvim'
+        - 'dust'
+        - 'zellij'
+      aur:
+        - 'skypeforlinux-bin'
+
