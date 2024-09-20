@@ -3,9 +3,9 @@
 #!/bin/bash
 
 # Update and install base packages
-sudo pacman -Sy --noconfirm {{ range .packages.linux.archlinux.pacman -}}{{ . | quote }} {{ end -}}
+sudo pacman -Syyu --noconfirm {{ range .packages.linux.archlinux.pacman -}}{{ . | quote }} {{ end -}}
 
 # Install AUR packages if using paru
-paru -Sy --noconfirm {{ range .packages.linux.archlinux.aur -}}{{ . | quote }} {{ end -}}
+paru -Syu --noconfirm {{ range .packages.linux.archlinux.aur -}}{{ . | quote }} {{ end -}}
 
 {{ end -}}

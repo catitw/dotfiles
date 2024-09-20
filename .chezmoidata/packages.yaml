@@ -2,10 +2,27 @@ packages:
   linux:
     archlinux:
       pacman:
+        - 'git'
+        - 'vim'
         - 'unzip'
-        - 'nvim'
+        - 'neovim'
         - 'dust'
         - 'zellij'
+        - 'spectacle'   # screenshot
+
+        - 'newsflash'   # RSS reader
+        - 'foliate'     # equb reader
+
+        # chinese input
+        # Tip: add input named "pinyin"
+        - 'fcitx5-im'
+        - 'fcitx5-chinese-addons'
+        - 'fcitx5-pinyin-zhwiki'
+        - 'fcitx5-material-color'
+        - 'fcitx5-configtool'
       aur:
         - 'skypeforlinux-bin'
+        - 'google-chrome'
 
+        # chinese input
+        - 'fcitx5-pinyin-moegirl'
