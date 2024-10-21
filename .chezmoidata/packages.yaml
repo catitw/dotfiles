@@ -8,8 +8,9 @@ packages:
         - 'neovim'
         - 'dust'
         - 'zellij'
+        - 'fish'
+        - 'fisher'      # fish plugin management
         - 'spectacle'   # screenshot
-
         - 'newsflash'   # RSS reader
         - 'foliate'     # equb reader
 
