@@ -2,7 +2,7 @@
 
 1. install `chezmoi`
 
-2. `chezmoi init siuolyppah`
+2. `chezmoi init siuolyppah --ssh`
 
    > you can pull and apply the latest changes from your repo with: `chezmoi update -v`
 
