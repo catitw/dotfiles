@@ -5,7 +5,7 @@ packages:
         - 'git'
         - 'vim'
         - 'unzip'
-        - 'neovim'
+        - 'less'
         - 'dust'
         - 'zellij'
         - 'fish'
@@ -13,6 +13,17 @@ packages:
         - 'spectacle'   # screenshot
         - 'newsflash'   # RSS reader
         - 'foliate'     # equb reader
+
+        # neovim requirements
+        - 'neovim'
+        - 'tree-sitter-cli'
+        - 'ripgrep'
+        - 'lazygit'
+        - 'gdu'        # disk usage analyzer
+        - 'bottom'     # graphical process/system monitor
+        - 'nodejs'
+        - 'ttf-0xproto-nerd'
+        - 'ttf-zed-mono-nerd'
 
         # chinese input
         # Tip: add input named "pinyin"
@@ -22,8 +33,10 @@ packages:
         - 'fcitx5-material-color'
         - 'fcitx5-configtool'
       aur:
-        - 'skypeforlinux-bin'
         - 'google-chrome'
 
         # chinese input
         - 'fcitx5-pinyin-moegirl'
+
+        # disabled: download may fail under proxy
+        # - 'skypeforlinux-bin'
