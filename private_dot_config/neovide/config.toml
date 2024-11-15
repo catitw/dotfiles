@@ -1,0 +1,22 @@
+
+[font]
+size = 13
+hinting = "full"
+edging = "antialias"
+
+[[font.normal]]
+family = "Zed Plex Mono"
+style = "Regular"
+
+[[font.bold]]
+family = "Zed Plex Mono"
+style = "Bold"
+
+
+[[font.italic]]
+family = "Zed Plex Mono"
+style = "Italic"
+
+[[font.bold_italic]]
+family = "Zed Plex Mono"
+style = "Bold Italic"
