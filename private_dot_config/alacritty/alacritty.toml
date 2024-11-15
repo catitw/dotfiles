@@ -28,7 +28,9 @@ bold_italic = { family = "Zed Plex Mono", style = "Bold Italic" }
 [keyboard]
 bindings = [
 
-{ key = "C", mods = "Control|Shift", action = "CopySelection" },
+{ key = "C", mods = "Control|Shift", action = "Copy" },
+{ key = "P", mods = "Control|Shift", action = "Paste" },
+
 
 { key = "+", mods = "Control|Shift", action = "IncreaseFontSize" },
 { key = "_", mods = "Control|Shift", action = "DecreaseFontSize" },  # alacritty BUG
