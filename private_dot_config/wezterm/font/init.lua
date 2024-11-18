@@ -2,12 +2,14 @@ local wezterm = require "wezterm"
 
 local module = {}
 
+---@class Wezterm
 function module.apply_to_config(c)
   c.font_size = 13
-  c.font = wezterm.font "Zed Plex Mono"
 
+  -- check with `wezterm ls-fonts`
   c.font = wezterm.font_with_fallback {
-    "JetBrains Mono",
+    { family = "Zed Plex Mono" },
+    { family = "JetBrains Mono" },
   }
 end
 

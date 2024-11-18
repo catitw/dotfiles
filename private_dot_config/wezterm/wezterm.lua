@@ -3,6 +3,7 @@ local launch = require "launch"
 local font = require "font"
 local mapping = require "mapping"
 
+---@type Wezterm
 local c = {}
 
 appearance.apply_to_config(c)
