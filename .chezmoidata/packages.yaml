@@ -14,6 +14,10 @@ packages:
         - 'newsflash'   # RSS reader
         - 'foliate'     # equb reader
 
+        # wezterm
+        - 'wezterm'
+        - 'ttf-nerd-fonts-symbols-mono' # default font for `wezterm`
+
         # neovim requirements
         - 'neovim'
         - 'tree-sitter-cli'
@@ -24,6 +28,7 @@ packages:
         - 'nodejs'
         - 'ttf-0xproto-nerd'
         - 'ttf-zed-mono-nerd'
+        - 'ttf-iosevka-nerd'
 
         # chinese input
         # Tip: add input named "pinyin"
