@@ -2,10 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
   alias se="EDITOR=nvim sudoedit"
   alias lg="lazygit"
+  alias fzf-file="rg --files --color never --hidden --no-ignore | fzf"
 end
 
-
 set -x GOPROXY https://goproxy.cn
-
-set -x PATH /home/me/ysftp_cli $PATH
-set -x PATH /home/me/pros/postgresql-16.4/install/bin $PATH
