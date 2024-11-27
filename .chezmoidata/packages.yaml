@@ -13,6 +13,7 @@ packages:
         - "spectacle" # screenshot
         - "newsflash" # RSS reader
         - "foliate" # equb reader
+        - "fzf" # required by fish alias
 
         # wezterm
         - "wezterm"
