@@ -2,10 +2,16 @@
 
 #!/bin/bash
 
+{{ range $group, $packages := .packages.linux.archlinux -}}
+
+echo "Installing packages for group: {{$group}}"
+
 # Update and install base packages
-sudo pacman -Syyu --noconfirm {{ range .packages.linux.archlinux.pacman -}}{{ . | quote }} {{ end -}}
+sudo pacman -Syyu --noconfirm {{ range index $packages "pacman" -}}{{ . | quote }} {{ end -}}
 
 # Install AUR packages if using paru
-paru -Syu --noconfirm {{ range .packages.linux.archlinux.aur -}}{{ . | quote }} {{ end -}}
+paru -Syu --noconfirm {{ range index $packages "aur" -}}{{ . | quote }} {{ end -}}
+
+{{ end -}}
 
 {{ end -}}

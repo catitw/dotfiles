@@ -1,53 +1,57 @@
 packages:
   linux:
     archlinux:
-      pacman:
-        - "git"
-        - "vim"
-        - "unzip"
-        - "less"
-        - "dust"
-        - "zellij"
-        - "fish"
-        - "fisher" # fish plugin management
-        - "spectacle" # screenshot
-        - "newsflash" # RSS reader
-        - "foliate" # equb reader
-        - "fzf" # required by fish alias
+      nvim:
+        pacman:
+          - "neovim"
+          - "tree-sitter-cli"
+          - "ripgrep"
+          - "lazygit"
+          - "fd"
+          - "gdu" # disk usage analyzer
+          - "bottom" # graphical process/system monitor
+          - "nodejs"
+          - "ttf-0xproto-nerd"
+          - "ttf-zed-mono-nerd"
+          - "ttf-iosevka-nerd"
+        aur:
+          # astro community plugins requirements
+          - "code-minimap"
 
-        # wezterm
-        - "wezterm"
-        - "ttf-nerd-fonts-symbols-mono" # default font for `wezterm`
+      input:
+        pacman:
+          # chinese input
+          # Tip: add input named "pinyin"
+          - "fcitx5-im"
+          - "fcitx5-chinese-addons"
+          - "fcitx5-pinyin-zhwiki"
+          - "fcitx5-material-color"
+          - "fcitx5-configtool"
+          - "fcitx5-pinyin-moegirl"
 
-        # neovim requirements
-        - "neovim"
-        - "tree-sitter-cli"
-        - "ripgrep"
-        - "lazygit"
-        - "fd"
-        - "gdu" # disk usage analyzer
-        - "bottom" # graphical process/system monitor
-        - "nodejs"
-        - "ttf-0xproto-nerd"
-        - "ttf-zed-mono-nerd"
-        - "ttf-iosevka-nerd"
+      wezterm:
+        pacman:
+          # wezterm
+          - "wezterm"
+          - "ttf-nerd-fonts-symbols-mono" # default font for `wezterm`
 
-        # chinese input
-        # Tip: add input named "pinyin"
-        - "fcitx5-im"
-        - "fcitx5-chinese-addons"
-        - "fcitx5-pinyin-zhwiki"
-        - "fcitx5-material-color"
-        - "fcitx5-configtool"
+      default:
+        pacman:
+          - "git"
+          - "vim"
+          - "unzip"
+          - "less"
+          - "dust"
+          - "zellij"
+          - "fish"
+          - "fisher" # fish plugin management
+          - "spectacle" # screenshot
+          - "newsflash" # RSS reader
+          - "foliate" # equb reader
+          - "fzf" # required by fish alias
 
-      aur:
-        - "google-chrome"
+        aur:
+          - "google-chrome"
 
-        # chinese input
-        - "fcitx5-pinyin-moegirl"
-
-        # astro community plugins requirements
-        - "code-minimap"
-
-        # disabled: download may fail under proxy
-        # - 'skypeforlinux-bin'
+          # disabled: download may fail under proxy
+          # - 'skypeforlinux-bin'
