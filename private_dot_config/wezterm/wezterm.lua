@@ -11,4 +11,6 @@ launch.apply_to_config(c)
 font.apply_to_config(c)
 mapping.apply_to_config(c)
 
+c.enable_wayland = false
+
 return c

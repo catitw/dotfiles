@@ -35,6 +35,26 @@ packages:
           - "wezterm"
           - "ttf-nerd-fonts-symbols-mono" # default font for `wezterm`
 
+      hyprland:
+        pacman:
+          - "sddm" # login managers
+          - "kitty" # default terminal emulator
+
+          # must have
+          - "dunst" # notification daemon
+          - "pipewire" # for screensharing
+          - "wireplumber"
+          - "xdg-desktop-portal-gtk" # XDPH doesn’t implement a file picker, so we also need this
+          - "qt5-wayland" # Qt wayland support
+          - "qt6-wayland"
+
+        aur:
+          - "hyprland-git"
+
+          # must have
+          - "xdg-desktop-portal-hyprland-git" # XDG Desktop Portal
+          - "hyprpolkitagent-git" # polkit authentication daemon
+
       default:
         pacman:
           - "git"
